@@ -12,13 +12,14 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+#
 development:
-  adapter: postgresql
+  adapter: mysql
   encoding: unicode
   database: blog_development
   pool: 5
   username: blog
-  password:
+  password: mm16llm
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
