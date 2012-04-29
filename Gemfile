@@ -2,10 +2,19 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 
+
+group :development do
+    gem 'mysql'
+end
+ 
+group :production do
+    gem 'pg'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+
 
 
 # Gems used only for assets and not required
@@ -32,7 +41,7 @@ gem 'jquery-rails'
 gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+ gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
