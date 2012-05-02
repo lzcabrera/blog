@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "50.116.23.36", :web, :app, :db, primary: true
+server ENV['TANGERINE_SSH'], :web, :app, :db, primary: true
 
 set :application, "blog"
 set :user, "deployer"
