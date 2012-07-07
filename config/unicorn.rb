@@ -1,8 +1,8 @@
 root = "/home/deployer/apps/blog/current"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
-stderr_path "#{root}/log/unicorn.log"
-stdout_path "#{root}/log/unicorn.log"
+stderr_path "#{root}/log/unicorn.stderr.log"
+stdout_path "#{root}/log/unicorn.stdout.log"
 
 listen "/tmp/unicorn.blog.sock"
 worker_processes 2
