@@ -5,5 +5,6 @@ stderr_path "#{root}/log/unicorn.stderr.log"
 stdout_path "#{root}/log/unicorn.stdout.log"
 
 listen "/tmp/unicorn.blog.sock"
+#listen "127.0.0.1:3000"
 worker_processes 2
 timeout 30
